@@ -1,3 +1,1 @@
-[BaseModel] (821c7720-48a7-4e1c-8d78-2b7ed57c6d27) {'id': '821c7720-48a7-4e1c-8d78-2b7ed57c6d27', 'created_at': datetime.datetime(2024, 5, 20, 0, 56, 18, 675016), 'updated_at': datetime.datetime(2024, 5, 20, 0, 56, 18, 675021), 'name': 'My First Model', 'my_number': 89}
-[BaseModel] (821c7720-48a7-4e1c-8d78-2b7ed57c6d27) {'id': '821c7720-48a7-4e1c-8d78-2b7ed57c6d27', 'created_at': datetime.datetime(2024, 5, 20, 0, 56, 18, 675016), 'updated_at': datetime.datetime(2024, 5, 20, 0, 56, 18, 675104), 'name': 'My First Model', 'my_number': 89}
-{'id': '821c7720-48a7-4e1c-8d78-2b7ed57c6d27', 'created_at': '2024-05-20T00:56:18.675016', 'updated_at': '2024-05-20T00:56:18.675104', 'name': 'My First Model', 'my_number': 89, '__class__': 'BaseModel'}
+[{"id": "716d5846-c95a-41c2-91cf-f9d680fb82f0", "created_at": "2024-05-20T01:18:59.370097", "updated_at": "2024-05-20T01:18:59.370114", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}]
