@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-"""class review file that inherits from Basemodel"""
+#!/usr/bin/python3
+""" review module"""
 
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """class review that will be inheriting from baseModel
-    """
-
+    """ Review model"""
     place_id = ""
     user_id = ""
     text = ""

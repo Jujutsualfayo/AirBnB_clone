@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-"""city file that inherits from Base model
-"""
+#!/usr/bin/python3
+""" Class City """
 
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """class city that will inherit from BaseModel
-    """
+    """Class City"""
 
     state_id = ""
     name = ""

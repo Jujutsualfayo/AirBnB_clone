@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
-"""Import Filestorage autoinit for models package."""
+#!/usr/bin/python3
+"""__init__ method for models package, or
+Module for FileStorage autoinit."""
 
 from models.engine.file_storage import FileStorage
 

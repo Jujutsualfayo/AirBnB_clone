@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-""" module file for the for state class """
+""" Class State """
 
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """ state class inherits from Basemodel """
-
+    """ Class State """
     name = ""
