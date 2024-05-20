@@ -27,10 +27,10 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(self.bm1, BaseModel)
         self.assertIsInstance(str(self.bm1), str)
         self.assertEqual(str(self.bm2),
-                        "[BaseModel] ({}) {}".format(b.id, b.__dict__))
+                "[BaseModel] ({}) {}".format(b.id, b.__dict__))
 
-    def test_to_dict(self):
-        """tests the dictionary representation of an instance"""
+        def test_to_dict(self):
+            """tests the dictionary representation of an instance"""
         self.assertIsInstance(self.bm2.to_dict(), dict)
 
     def test_type_created_at(self):
