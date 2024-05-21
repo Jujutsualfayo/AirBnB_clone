@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Serializes the instances to a JSON file and
-deserializes the JSON file to instances.
+Serializes instances to a JSON file and
+deserializes JSON file to instances.
 """
 
 import json
@@ -15,19 +15,19 @@ from models.amenity import Amenity
 from models.review import Review
 
 class_dict = {
-        "BaseModel": BaseModel,
-        "User": User,
-        "Place": Place,
-        "Amenity": Amenity,
-        "City": City,
-        "Review": Review,
-        "State": State
-        }
+    "BaseModel": BaseModel,
+    "User": User,
+    "Place": Place,
+    "Amenity": Amenity,
+    "City": City,
+    "Review": Review,
+    "State": State
+}
 # Filestorage == type(self)
 
 
 class FileStorage:
-    """This is my file storage engine class, that is;
+    """The file storage engine class, that is;
     A class that serialize and deserialize instances to a JSON file
     """
     __file_path = "file.json"
@@ -48,7 +48,7 @@ class FileStorage:
         # type(self).__objects[obj.id] = obj
 
     def save(self):
-        """Will serializes __objects to the JSON file (path: __file_path)"""
+        """serializes __objects to the JSON file (path: __file_path)"""
         new_dict = []
         for obj in type(self).__objects.values():
             new_dict.append(obj.to_dict())
@@ -64,11 +64,11 @@ class FileStorage:
         """Deserializes the JSON file to __objects if it exists"""
         if os.path.exists(type(self).__file_path) is True:
             return
-        try:
-            with open(type(self).__file_path, "r") as file:
-                new_obj = json.load(file)
+            try:
+                with open(type(self).__file_path, "r") as file:
+                    new_obj = json.load(file)
                     for key, val in new_obj.items():
                         obj = self.class_dict[val['__class__']](**val)
                         type(self).__objects[key] = obj
-        except Exception:
-            pass
+            except Exception:
+                pass
