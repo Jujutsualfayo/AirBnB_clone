@@ -22,10 +22,10 @@ class BaseModel:
                     continue
                 elif key == 'created_at':
                     self.created_at = datetime.strptime(
-                            kwargs['created_at'], dtime_format)
+                        kwargs['created_at'], dtime_format)
                 elif key == 'updated_at':
                     self.updated_at = datetime.strptime(
-                            kwargs['updated_at'], dtime_format)
+                        kwargs['updated_at'], dtime_format)
                 else:
                     setattr(self, key, value)
         else:
@@ -64,7 +64,7 @@ class BaseModel:
         #    else:
         #        my_dict[key] = value
         return my_dict
-    # my_dict = dict()
+        # my_dict = dict()
         # my_dict['__class__'] = self.__class__.__name__
         # for key, value in self.__dict__.items():
         #    if type(value) is datetime:
